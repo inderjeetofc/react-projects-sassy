@@ -12,6 +12,7 @@ function Header() {
   const [searchTerm, setsearchTerm] = useState('');
   const dispatch = useDispatch();
   const submitSearchHandler = (e) => {
+    //comment
     e.preventDefault();
     if (searchTerm.length !== 0) {
       dispatch(searchTermReducer(searchTerm));
