@@ -1,0 +1,20 @@
+@import './common//colors.scss';
+@import './common/mixin.scss';
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+body {
+  background-color: $primary-color;
+  color: white;
+}
+.container {
+  margin: 2rem;
+  // height: 100vh;
+  // @include test-border;
+}

@@ -1,0 +1,19 @@
+@import '../../common/colors.scss';
+@import '../../common/mixin.scss';
+@import '../../common/font.scss';
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+.movie-list {
+  h2 {
+    font-family: $primary-font-family;
+    color: $font-secondary;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 1rem;
+}

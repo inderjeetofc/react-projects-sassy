@@ -1,0 +1,13 @@
+@import './colors.scss';
+
+@mixin test-border($b-color: white) {
+  border: 2px solid $b-color;
+}
+@mixin hover($color: $hover-tertiary) {
+  color: $color;
+}
+@mixin info-bar($color: $secondary-color) {
+  background-color: $secondary-color;
+  width: 100vw;
+  height: 10vh;
+}

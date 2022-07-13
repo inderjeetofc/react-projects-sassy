@@ -1,0 +1,65 @@
+@import '../../common/colors.scss';
+@import '../../common/font.scss';
+@import '../../common/mixin.scss';
+.header {
+  @include info-bar;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__div {
+  height: 50%;
+  width: 10%;
+  //   @include test-border;
+}
+.logo {
+  color: $font-tertiary;
+  font-family: $primary-font-family;
+  font-weight: 600;
+  font-size: larger;
+  width: 150%;
+  text-align: center;
+  margin-left: 0.2rem;
+}
+.logo_span {
+  height: 100%;
+}
+.logo--hover:hover {
+  @include hover;
+  display: inline-block;
+  transform: scale(1.1);
+}
+.user_image--img {
+  height: 100%;
+  width: auto;
+}
+.search-movie {
+  // @include test-border;
+  width: 30%;
+  form {
+    color: $font-primary;
+    font-family: $primary-font-family;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.3rem;
+    input {
+      height: 2rem;
+      min-width: 70%;
+      outline: none;
+      background-color: black;
+      border: none;
+      color: $font-primary;
+    }
+    button {
+      min-width: 20%;
+      max-width: 25%;
+      background-color: $font-secondary;
+      border: none;
+      border-radius: 0.3rem;
+      &:hover {
+        background-color: $hover-tertiary;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import '../../common/colors.scss';
+@import '../../common/font.scss';
+@import '../../common/mixin.scss';
+
+.movie-detail-container {
+  margin: 2rem;
+  //   @include test-border;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: end;
+  span {
+    margin-right: 1rem;
+    font-size: 0.85rem;
+    color: $font-secondary;
+    font-family: $secondary-font-family;
+    font-weight: bold;
+  }
+  div {
+    margin-bottom: 0.5rem;
+  }
+  ul {
+    font-family: $primary-font-family;
+    color: $font-primary;
+    font-weight: bold;
+  }
+  li {
+    list-style: none;
+    margin: 1rem 0;
+    font-family: $primary-font-family;
+    font-weight: bold;
+    color: $font-secondary;
+    span {
+      color: $font-primary;
+    }
+  }
+}
+.title {
+  font-family: $secondary-font-family;
+  font-weight: 600;
+  font-size: 3rem;
+  color: $font-primary;
+}
+.plot-details {
+  font-family: $secondary-font-family;
+}

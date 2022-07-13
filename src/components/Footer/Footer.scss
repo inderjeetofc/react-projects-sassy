@@ -1,0 +1,15 @@
+@import '../../common/mixin.scss';
+@import '../../common/colors.scss';
+@import '../../common/font.scss';
+.footer {
+  @include info-bar;
+  display: flex;
+  justify-content: center;
+}
+.footer__rights-string {
+  color: $font-primary;
+  font-weight: 400;
+}
+.logo__footer {
+  width: 100% !important ;
+}

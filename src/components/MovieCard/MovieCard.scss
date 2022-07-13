@@ -1,0 +1,30 @@
+@import '../../common/colors.scss';
+@import '../../common/font.scss';
+@import '../../common/mixin.scss';
+.card-item {
+  // @include test-border;
+  cursor: pointer;
+  background-color: $secondary-color;
+  transition: all 0.3s linear 0.01s;
+  margin: 0 1rem;
+  height: 100%;
+  &:hover {
+    background-color: $hover-tertiary;
+    transform: translate(0, -0.4rem);
+    transition: all 0.3s linear 0.01s;
+  }
+}
+.card-top {
+  height: 300px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+.card-bottom {
+  color: $font-primary;
+  margin: 0.8rem 0.2rem;
+  h4 {
+    font-family: $secondary-font-family;
+  }
+}
